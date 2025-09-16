@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Silva Financial Inc.</title>
+    <meta name="description" content="Get in touch with Silva Financial Inc. for professional bookkeeping services. Schedule your free consultation today.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <div class="logo-icon">SF</div>
+                <div class="logo-text">
+                    Silva Financial Inc.
+                    <span class="logo-subtitle">Bookkeeping Services</span>
+                </div>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- CTA Buttons -->
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-outline btn-sm">Free Consultation</a>
+                <a href="https://calendly.com/silva-financial" class="btn btn-primary btn-sm" target="_blank">Schedule Meeting</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" aria-hidden="true">
+            <nav class="mobile-nav">
+                <div class="mobile-cta">
+                    <a href="contact.html" class="btn btn-outline">Free Consultation</a>
+                    <a href="https://calendly.com/silva-financial" class="btn btn-primary" target="_blank">Schedule Meeting</a>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="index.html" class="mobile-nav-link">Home</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="about.html" class="mobile-nav-link">About</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="services.html" class="mobile-nav-link">Services</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="blog.html" class="mobile-nav-link">Resources</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="contact.html" class="mobile-nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Ready to take control of your finances? Let's discuss how we can help your business thrive.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Info Section -->
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon"><div class="lottie-icon" data-path="animations/contact1.json"></div></div>
+                        <h3>Phone</h3>
+                        <p>Call us for immediate assistance</p>
+                        <a href="tel:+1234567890">(123) 456-7890</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><div class="lottie-icon" data-path="animations/contact2.json"></div></div>
+                        <h3>Email</h3>
+                        <p>Send us a message anytime</p>
+                        <a href="mailto:info@silvafinancial.com">info@silvafinancial.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><div class="lottie-icon" data-path="animations/contact3.json"></div></div>
+                        <h3>Location</h3>
+                        <p>Visit our office</p>
+                        <address>123 Business St<br>Financial District, NY 10001</address>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Send us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="starter">Starter Package</option>
+                                <option value="premium">Premium Package</option>
+                                <option value="enterprise">Enterprise Package</option>
+                                <option value="consultation">Free Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">How quickly can you start working on my books?</button>
+                        <div class="faq-answer">
+                            <p>We can typically start working on your books within 1-2 business days after our initial consultation and setup.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">What accounting software do you use?</button>
+                        <div class="faq-answer">
+                            <p>We primarily work with QuickBooks Online, but we're also experienced with Xero, FreshBooks, and other popular accounting platforms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">Do you offer tax preparation services?</button>
+                        <div class="faq-answer">
+                            <p>While we focus on bookkeeping and financial reporting, we can connect you with trusted tax professionals for tax preparation needs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">What information do you need to get started?</button>
+                        <div class="faq-answer">
+                            <p>We'll need access to your bank statements, credit card statements, invoices, receipts, and any existing accounting records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <div class="logo-icon">SF</div>
+                        <div class="logo-text">
+                            Silva Financial Inc.
+                            <span class="logo-subtitle">Bookkeeping Services</span>
+                        </div>
+                    </a>
+                    <p class="footer-description">Professional bookkeeping services to help your business thrive. QuickBooks Certified ProAdvisor with transparent pricing.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <a href="mailto:info@silvafinancial.com">info@silvafinancial.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <address>123 Business St<br>Financial District, NY 10001</address>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M8 11v5" />
+                                <path d="M8 8v.01" />
+                                <path d="M12 16v-5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="X">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M4 4l16 16" />
+                                <path d="M20 4l-16 16" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Silva Financial Inc. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+{
+  "name": "silva-financial-layout",
+  "version": "1.0.0",
+  "description": "Basic layout for Silva Financial Inc. website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp build",
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.69.5"
+  },
+  "keywords": ["bookkeeping", "financial", "website", "layout"],
+  "author": "Gabriel Coronado",
+  "license": "MIT"
+}
+
