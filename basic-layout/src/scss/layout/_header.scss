@@ -38,16 +38,35 @@
     font-size: $font-size-lg;
   }
   
+  .logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: $spacing-3;
+    object-fit: contain;
+  }
+  
   .logo-text {
-    font-size: $font-size-xl;
-    font-weight: $font-weight-bold;
-    color: $primary-green;
+    display: flex;
+    flex-direction: column;
+    
+    .logo-title {
+      font-family: $font-family-heading;
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      color: $text-primary;
+      text-transform: uppercase;
+      border-top: 1px solid $text-primary;
+      border-bottom: 1px solid $text-primary;
+      padding: $spacing-1 0;
+      line-height: 1.2;
+    }
     
     .logo-subtitle {
       display: block;
       font-size: $font-size-sm;
       font-weight: $font-weight-normal;
       color: $text-muted;
+      margin-top: $spacing-1;
     }
   }
 }

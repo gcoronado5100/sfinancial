@@ -24,6 +24,14 @@ const paths = {
     src: 'src/animations/**/*',
     dest: 'dist/animations/'
   },
+  fonts: {
+    src: 'src/fonts/**/*',
+    dest: 'dist/fonts/'
+  },
+  svg: {
+    src: 'src/svg/**/*',
+    dest: 'dist/svg/'
+  },
   html: {
     src: 'src/html/**/*.html',
     dest: 'dist/'
@@ -65,6 +73,18 @@ function copyAnimations() {
     .pipe(gulp.dest(paths.animations.dest));
 }
 
+// Copy Fonts
+function copyFonts() {
+  return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest));
+}
+
+// Copy SVG files
+function copySVG() {
+  return gulp.src(paths.svg.src)
+    .pipe(gulp.dest(paths.svg.dest));
+}
+
 // Copy HTML files
 function copyHTML() {
   return gulp.src(paths.html.src)
@@ -77,11 +97,13 @@ function watchFiles() {
   gulp.watch(paths.js.src, compileJS);
   gulp.watch(paths.images.src, copyImages);
   gulp.watch(paths.animations.src, copyAnimations);
+  gulp.watch(paths.fonts.src, copyFonts);
+  gulp.watch(paths.svg.src, copySVG);
   gulp.watch(paths.html.src, copyHTML);
 }
 
 // Build task
-const build = gulp.series(compileSass, compileJS, copyImages, copyAnimations, copyHTML);
+const build = gulp.series(compileSass, compileJS, copyImages, copyAnimations, copyFonts, copySVG, copyHTML);
 
 // Watch task
 const watch = gulp.series(build, watchFiles);
@@ -91,6 +113,8 @@ exports.sass = compileSass;
 exports.js = compileJS;
 exports.images = copyImages;
 exports.animations = copyAnimations;
+exports.fonts = copyFonts;
+exports.svg = copySVG;
 exports.html = copyHTML;
 exports.build = build;
 exports.watch = watch;

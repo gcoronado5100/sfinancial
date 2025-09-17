@@ -1,6 +1,6 @@
 // Footer styles
 .footer {
-  background-color: $gray-900;
+  background-color: $footer-bg;
   color: $white;
   padding: $spacing-16 0 $spacing-8;
   margin-top: auto;
@@ -44,10 +44,36 @@
       font-size: $font-size-lg;
     }
     
+    .logo-image {
+      width: 40px;
+      height: 40px;
+      margin-right: $spacing-3;
+      object-fit: contain;
+    }
+    
     .logo-text {
-      font-size: $font-size-xl;
-      font-weight: $font-weight-bold;
-      color: $white;
+      display: flex;
+      flex-direction: column;
+      
+      .logo-title {
+        font-family: $font-family-heading;
+        font-size: $font-size-xl;
+        font-weight: $font-weight-bold;
+        color: $white;
+        text-transform: uppercase;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        padding: $spacing-1 0;
+        line-height: 1.2;
+      }
+      
+      .logo-subtitle {
+        display: block;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-normal;
+        color: $gray-400;
+        margin-top: $spacing-1;
+      }
     }
   }
   

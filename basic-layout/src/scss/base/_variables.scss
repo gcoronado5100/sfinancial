@@ -46,13 +46,16 @@ $bg-primary: $white;
 $bg-secondary: $gray-50;
 $bg-accent: $primary-green-light;
 
+// Footer color
+$footer-bg: #0E2A4B;
+
 // Border colors
 $border-light: $gray-200;
 $border-medium: $gray-300;
 
 // Typography
 $font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-$font-family-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-heading: 'Abhaya Libre', Georgia, 'Times New Roman', serif;
 
 $font-size-xs: 0.75rem;    // 12px
 $font-size-sm: 0.875rem;   // 14px
