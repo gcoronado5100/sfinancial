@@ -54,6 +54,10 @@ add_action('admin_post_gabecode_social_save_options', 'gabecode_plus_save_social
 add_action('admin_post_gabecode_cta_save_options', 'gabecode_plus_save_cta_options_cb');
 // ----------------------------------------------------------
 
+// Register Plugin's Post Types
+add_action('init', 'gcp_team_members_post_type');
+// ----------------------------------------------------------
+
 // Register Plugin's Gutenberg Blocks
 add_action('rest_api_init', 'gcp_expose_options_in_rest');
 add_action( 'init', 'gcp_register_blocks');

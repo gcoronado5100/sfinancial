@@ -46,6 +46,14 @@ function gcp_call_to_action_page() {
                         </div>
 
                         <div class="gcp-form-group">
+                            <label for="gabecode-plus-contact-url">
+                                <i class="fa-solid fa-link" style="color: var(--gcp-primary-color); margin-right: 8px;"></i>
+                                Contact URL
+                            </label>
+                                <input name="gabecode-plus-contact-url" type="url" id="gabecode-plus-contact-url" class="gcp-form-control" value="<?= esc_attr($cta_options['contact_url']) ?>" placeholder="https://example.com/contact"/>
+                        </div>
+
+                        <div class="gcp-form-group">
                             <label for="gabecode-plus-main-enquiry-url">
                                 <i class="fa-solid fa-link" style="color: var(--gcp-primary-color); margin-right: 8px;"></i>
                                 Main Enquiry URL
