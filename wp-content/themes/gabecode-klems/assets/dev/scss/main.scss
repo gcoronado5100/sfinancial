@@ -1,0 +1,29 @@
+// Main SCSS file for Silva Financial Inc. website
+
+// Base styles
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/breakpoints';
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout styles
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+// Component styles
+@import 'components/buttons';
+@import 'components/cards';
+
+// Page-specific styles
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/services';
+@import 'pages/contact';
+@import 'pages/blog';
+@import 'pages/404';
+@import 'pages/thank-you';
+
+// Utility classes
+@import 'utilities/utilities';

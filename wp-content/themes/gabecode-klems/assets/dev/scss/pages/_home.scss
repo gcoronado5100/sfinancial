@@ -1,0 +1,255 @@
+// Home page styles
+.hero {
+  background: linear-gradient(135deg, $primary-green-light 0%, $white 100%);
+  padding: $spacing-20 0;
+  text-align: center;
+  
+  @include media-up(md) {
+    padding: $spacing-24 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    .hero-title {
+      font-size: $font-size-4xl;
+      font-weight: $font-weight-bold;
+      color: $text-primary;
+      margin-bottom: $spacing-6;
+      line-height: $line-height-tight;
+      
+      @include media-up(md) {
+        font-size: $font-size-5xl;
+      }
+    }
+    
+    .hero-subtitle {
+      font-size: $font-size-lg;
+      color: $text-secondary;
+      margin-bottom: $spacing-8;
+      line-height: $line-height-relaxed;
+      
+      @include media-up(md) {
+        font-size: $font-size-xl;
+      }
+    }
+    
+    .hero-cta {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-4;
+      align-items: center;
+      
+      @include media-up(sm) {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// Services section
+.services {
+  padding: $spacing-20 0;
+  background-color: $white;
+  
+  .services-header {
+    text-align: center;
+    margin-bottom: $spacing-16;
+    
+    .section-title {
+      font-size: $font-size-3xl;
+      font-weight: $font-weight-bold;
+      color: $text-primary;
+      margin-bottom: $spacing-4;
+      
+      @include media-up(md) {
+        font-size: $font-size-4xl;
+      }
+    }
+    
+    .section-subtitle {
+      font-size: $font-size-lg;
+      color: $text-secondary;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  .services-grid {
+    display: grid;
+    gap: $spacing-8;
+    
+    @include media-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include media-up(lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+// Pricing section
+.pricing {
+  padding: $spacing-20 0;
+  background-color: $bg-secondary;
+  
+  .pricing-header {
+    text-align: center;
+    margin-bottom: $spacing-16;
+    
+    .section-title {
+      font-size: $font-size-3xl;
+      font-weight: $font-weight-bold;
+      color: $text-primary;
+      margin-bottom: $spacing-4;
+      
+      @include media-up(md) {
+        font-size: $font-size-4xl;
+      }
+    }
+    
+    .section-subtitle {
+      font-size: $font-size-lg;
+      color: $text-secondary;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  .pricing-grid {
+    display: grid;
+    gap: $spacing-8;
+    
+    @include media-up(md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include media-up(lg) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+// Why choose us section
+.why-choose-us {
+  padding: $spacing-20 0;
+  background-color: $white;
+  
+  .why-choose-us-content {
+    display: grid;
+    gap: $spacing-12;
+    align-items: center;
+    
+    @include media-up(lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .content-text {
+      .section-title {
+        font-size: $font-size-3xl;
+        font-weight: $font-weight-bold;
+        color: $text-primary;
+        margin-bottom: $spacing-6;
+        
+        @include media-up(md) {
+          font-size: $font-size-4xl;
+        }
+      }
+      
+      .section-description {
+        font-size: $font-size-lg;
+        color: $text-secondary;
+        line-height: $line-height-relaxed;
+        margin-bottom: $spacing-8;
+      }
+      
+      .features-list {
+        .feature-item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: $spacing-4;
+          
+          .feature-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: $spacing-3;
+            color: $secondary-green;
+            flex-shrink: 0;
+            margin-top: 2px;
+          }
+          
+          .feature-text {
+            color: $text-secondary;
+            line-height: $line-height-relaxed;
+          }
+        }
+      }
+    }
+    
+    .content-image {
+      text-align: center;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius-lg;
+        box-shadow: $shadow-lg;
+      }
+    }
+  }
+}
+
+// CTA section
+.cta-section {
+  padding: $spacing-20 0;
+  background: linear-gradient(135deg, $primary-green 0%, $primary-green-dark 100%);
+  color: $white;
+  text-align: center;
+  
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+    
+    .cta-title {
+      font-size: $font-size-3xl;
+      font-weight: $font-weight-bold;
+      margin-bottom: $spacing-4;
+      
+      @include media-up(md) {
+        font-size: $font-size-4xl;
+      }
+    }
+    
+    .cta-description {
+      font-size: $font-size-lg;
+      margin-bottom: $spacing-8;
+      opacity: 0.9;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-4;
+      align-items: center;
+      
+      @include media-up(sm) {
+        flex-direction: row;
+        justify-content: center;
+      }
+      
+      .btn {
+        background-color: $white;
+        color: $primary-green;
+        border-color: $white;
+        
+        &:hover {
+          background-color: $gray-100;
+          border-color: $gray-100;
+        }
+      }
+    }
+  }
+}

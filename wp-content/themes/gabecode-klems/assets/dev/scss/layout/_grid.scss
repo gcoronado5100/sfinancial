@@ -1,0 +1,112 @@
+// Grid system
+.container {
+  @include container;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$spacing-3;
+  margin-right: -$spacing-3;
+}
+
+.col {
+  flex: 1;
+  padding-left: $spacing-3;
+  padding-right: $spacing-3;
+  margin-bottom: $spacing-6;
+}
+
+// Column sizes
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 percentage($i / 12);
+    max-width: percentage($i / 12);
+    padding-left: $spacing-3;
+    padding-right: $spacing-3;
+    margin-bottom: $spacing-6;
+  }
+}
+
+// Responsive columns
+@each $breakpoint, $value in $breakpoints {
+  @if $value > 0 {
+    @include media-up($breakpoint) {
+      @for $i from 1 through 12 {
+        .col-#{$breakpoint}-#{$i} {
+          flex: 0 0 percentage($i / 12);
+          max-width: percentage($i / 12);
+        }
+      }
+    }
+  }
+}
+
+// Utility classes
+.d-flex { display: flex; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-none { display: none; }
+
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.align-stretch { align-items: stretch; }
+
+.text-start { text-align: left; }
+.text-center { text-align: center; }
+.text-end { text-align: right; }
+
+// Spacing utilities
+$spacings: (
+  0: 0,
+  1: $spacing-1,
+  2: $spacing-2,
+  3: $spacing-3,
+  4: $spacing-4,
+  5: $spacing-5,
+  6: $spacing-6,
+  8: $spacing-8,
+  10: $spacing-10,
+  12: $spacing-12,
+  16: $spacing-16,
+  20: $spacing-20,
+  24: $spacing-24
+);
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $spacings {
+    .#{$abbrev}-#{$size} { #{$prop}: $length; }
+    .#{$abbrev}t-#{$size} { #{$prop}-top: $length; }
+    .#{$abbrev}r-#{$size} { #{$prop}-right: $length; }
+    .#{$abbrev}b-#{$size} { #{$prop}-bottom: $length; }
+    .#{$abbrev}l-#{$size} { #{$prop}-left: $length; }
+    .#{$abbrev}x-#{$size} { #{$prop}-left: $length; #{$prop}-right: $length; }
+    .#{$abbrev}y-#{$size} { #{$prop}-top: $length; #{$prop}-bottom: $length; }
+  }
+}
+
+// Responsive utilities
+@each $breakpoint, $value in $breakpoints {
+  @if $value > 0 {
+    @include media-up($breakpoint) {
+      .d-#{$breakpoint}-none { display: none; }
+      .d-#{$breakpoint}-block { display: block; }
+      .d-#{$breakpoint}-flex { display: flex; }
+      .d-#{$breakpoint}-inline { display: inline; }
+      .d-#{$breakpoint}-inline-block { display: inline-block; }
+    }
+  }
+}

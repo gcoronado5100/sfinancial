@@ -1,0 +1,164 @@
+// Typography styles
+.heading-1 {
+  font-family: $font-family-heading;
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-6;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-5xl;
+  }
+  
+  // Drop cap effect for first letter
+  &.drop-cap {
+    &::first-letter {
+      font-size: 1.5em;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.1em;
+      margin-top: 0.05em;
+    }
+  }
+}
+
+.heading-2 {
+  font-family: $font-family-heading;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-5;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-4xl;
+  }
+  
+  // Drop cap effect for first letter
+  &.drop-cap {
+    &::first-letter {
+      font-size: 1.4em;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.1em;
+      margin-top: 0.05em;
+    }
+  }
+}
+
+.heading-3 {
+  font-family: $font-family-heading;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-4;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-3xl;
+  }
+  
+  // Drop cap effect for first letter
+  &.drop-cap {
+    &::first-letter {
+      font-size: 1.3em;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.1em;
+      margin-top: 0.05em;
+    }
+  }
+}
+
+.heading-4 {
+  font-family: $font-family-heading;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-3;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-2xl;
+  }
+  
+  // Drop cap effect for first letter
+  &.drop-cap {
+    &::first-letter {
+      font-size: 1.2em;
+      line-height: 0.8;
+      float: left;
+      margin-right: 0.1em;
+      margin-top: 0.05em;
+    }
+  }
+}
+
+.heading-5 {
+  font-family: $font-family-heading;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-3;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-xl;
+  }
+}
+
+.heading-6 {
+  font-family: $font-family-heading;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tight;
+  margin-bottom: $spacing-2;
+  text-transform: uppercase;
+  
+  @include media-up(md) {
+    font-size: $font-size-lg;
+  }
+}
+
+// Text utilities
+.text-large {
+  font-family: $font-family-primary;
+  font-size: $font-size-lg;
+  line-height: $line-height-relaxed;
+}
+
+.text-small {
+  font-family: $font-family-primary;
+  font-size: $font-size-sm;
+  line-height: $line-height-normal;
+}
+
+.text-muted {
+  color: $text-muted;
+}
+
+.text-primary {
+  color: $primary-green;
+}
+
+.text-success {
+  color: $green-600;
+}
+
+// Font weights
+.font-light { font-weight: $font-weight-light; }
+.font-normal { font-weight: $font-weight-normal; }
+.font-medium { font-weight: $font-weight-medium; }
+.font-semibold { font-weight: $font-weight-semibold; }
+.font-bold { font-weight: $font-weight-bold; }
+
+// Text alignment
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+// Line heights
+.leading-tight { line-height: $line-height-tight; }
+.leading-normal { line-height: $line-height-normal; }
+.leading-relaxed { line-height: $line-height-relaxed; }
