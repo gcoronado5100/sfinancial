@@ -28,4 +28,13 @@ function gcp_admin_menu() {
         'gcp_call_to_action', 
         'gcp_call_to_action_page'
     );
+
+    add_submenu_page( 
+        'gabecode-plus-dashboard', 
+        __('Documentation', 'gabecode-plus'), 
+        __('Documentation', 'gabecode-plus'), 
+        'edit_theme_options' , 
+        'gcp_documentation', 
+        'gcp_feature_not_ready_page'
+    );
 }

@@ -4,24 +4,24 @@
  * Administración de habilidades técnicas
  */
 
-function gcp_skills_settings_page($pageTitle, $pageDescription) {
+function gcp_feature_not_ready_page() {
     ob_start();
     ?>
-    <div class="gcp-admin-page__container">
-        <div class="gcp-page__header">
-            <h1><i class="fa-solid fa-code"></i> <?php _e($pageTitle, 'gabecode-plus'); ?></h1>
-            <p><?= __($pageDescription, 'gabecode-plus');?></p>
-        </div>
+    <div class="gcp-admin-page">
+        <div class="gcp-container">
+            <div class="gcp-header">
+                <h1><?php _e('Sorry', 'gabecode-plus'); ?></h1>
+                <p><?php _e('This functionality is not available yet', 'gabecode-plus');?></p>
+            </div>
 
-        <div class="gcp-admin-page__body">
-            <div class="gcp-coming-soon">
-                <div class="gcp-coming-soon__icon">
-                    <i class="fa-solid fa-tools"></i>
+            <div class="gcp-card gcp-text-center">
+                <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--gcp-orange-color), var(--gcp-gold-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--gcp-spacing-lg) auto;">
+                    <i class="fa-solid fa-tools" style="color: white; font-size: 48px;"></i>
                 </div>
-                <h3><?php _e('Coming Soon', 'gabecode-plus'); ?></h3>
-                <p><?php _e('This functionality will be available in a future update of the plugin.', 'gabecode-plus'); ?></p>
-                <a href="<?php echo admin_url('admin.php?page=gcp-plugin-options'); ?>" class="gcp-button gcp-button--primary">
-                    <i class="fa-solid fa-arrow-left"></i>
+                <h2><?php _e('Coming Soon', 'gabecode-plus'); ?></h2>
+                <p class="gcp-mb-lg"><?php _e('This functionality will be available in a future update of the plugin.', 'gabecode-plus'); ?></p>
+                <a href="<?php echo admin_url('admin.php?page=gabecode-plus-dashboard'); ?>" class="gcp-btn gcp-btn-primary">
+                    <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i>
                     <?php _e('Back to Dashboard', 'gabecode-plus'); ?>
                 </a>
             </div>

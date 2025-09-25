@@ -1,0 +1,29 @@
+{
+    "name": "gabecode-klems-theme",
+    "version": "1.0.0",
+    "description": "Every1Drives WordPress Theme with Gulp + SCSS",
+    "main": "gulpfile.js",
+    "scripts": {
+      "dev": "gulp watch",
+      "build": "gulp build",
+      "sass": "gulp sass",
+      "js": "gulp js",
+      "images": "gulp images",
+      "fonts": "gulp fonts"
+    },
+    "devDependencies": {
+      "gulp": "^4.0.2",
+      "gulp-sass": "^5.1.0",
+      "sass": "^1.69.0",
+      "gulp-autoprefixer": "^8.0.0",
+      "gulp-clean-css": "^4.3.0",
+      "gulp-sourcemaps": "^3.0.0",
+      "gulp-concat": "^2.6.1",
+      "gulp-uglify": "^3.0.2",
+      "gulp-imagemin": "^7.1.0",
+      "gulp-rename": "^2.0.0"
+    },
+    "keywords": ["wordpress", "theme", "gulp", "scss", "Silva Financial"],
+    "author": "Gabriel Coronado",
+    "license": "MIT"
+  }
