@@ -1,0 +1,15 @@
+:root {
+  --gcp-primary-color: #136FB7;
+  --gcp-secondary-color: #4D5BCE;
+  --gcp-green-color: #43D9AD;
+  --gcp-purple-color: #B16CEA;
+  --gcp-orange-color: #FF6B35;
+  --gcp-gold-color: #F7CC47;
+  --gcp-red-color: #FF3C49;
+  --gcp-teal-color: #26A69A;
+  
+  --gcp-dark-color: #03141C;
+  --gcp-soft-white: #EDEDED;
+  --gcp-white: #FAFAFA;
+  --gcp-black: #010C15;
+}
