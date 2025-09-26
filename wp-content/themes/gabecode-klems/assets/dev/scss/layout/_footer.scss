@@ -124,10 +124,10 @@
   }
   
   .footer-list {
-    .footer-item {
+    .menu-item {
       margin-bottom: $spacing-2;
       
-      .footer-link {
+       a {
         color: $gray-400;
         text-decoration: none;
         font-size: $font-size-sm;

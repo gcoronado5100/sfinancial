@@ -40,26 +40,30 @@
                 
                 <div class="footer-links">
                     <h3 class="footer-title">Services</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="services.html" class="footer-link">Bookkeeping</a></li>
-                        <li class="footer-item"><a href="services.html" class="footer-link">Financial Reports</a></li>
-                        <li class="footer-item"><a href="services.html" class="footer-link">Payroll</a></li>
-                        <li class="footer-item"><a href="services.html" class="footer-link">Consulting</a></li>
-                    </ul>
+                    <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'footerPages',
+                            'menu_class' => 'footer-list',
+                            'container' => 'ul',
+                            'fallback_cb' => 'gabecode_default_footer_menu'
+                        ));
+                    ?>
                 </div>
                 
                 <div class="footer-links">
                     <h3 class="footer-title">Company</h3>
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="about.html" class="footer-link">About Us</a></li>
-                        <li class="footer-item"><a href="blog.html" class="footer-link">Blog</a></li>
-                        <li class="footer-item"><a href="contact.html" class="footer-link">Contact</a></li>
-                        <li class="footer-item"><a href="privacy.html" class="footer-link">Privacy</a></li>
-                    </ul>
+                    <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'footerActions',
+                            'menu_class' => 'footer-list',
+                            'container' => 'ul',
+                            'fallback_cb' => 'gabecode_default_footer_menu'
+                        ));
+                    ?>
                 </div>
                 
                 <div class="footer-links">
-                    <h3 class="footer-title">Follow Us</h3>
+                    <h3 class="footer-title"><?= __('Follow Us', 'gabecode') ?></h3>
                     <div class="social-links">
                         <a href="#" class="social-link" aria-label="LinkedIn">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +95,8 @@
                 <p class="footer-copyright">© <?php echo date('Y'); ?> Silva Financial Inc. All rights reserved.</p>
                 <div class="footer-legal">
                     <a href="privacy.html" class="legal-link">Privacy Policy</a>
-                    <a href="terms.html" class="legal-link">Terms of Service</a>
+                    <a href="terms.html" class="legal-link">Sitemap</a>
+                    <a href="https://gabecode.com/" target="_blank" class="legal-link">Developed by Gabe<b>Code</b></a>
                 </div>
             </div>
         </div>
