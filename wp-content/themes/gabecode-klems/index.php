@@ -10,7 +10,7 @@
                         <a href="https://calendly.com/silva-financial" class="btn btn-primary btn-lg" target="_blank">Schedule Free Consultation</a>
                         <a href="about.html" class="btn btn-secondary btn-lg">Learn More</a>
                     </div>
-                    <div id="hero-lottie" aria-hidden="true" style="width: 320px; height: 320px; margin-top: 16px;"></div>
+                
                 </div>
             </div>
         </section>
@@ -75,56 +75,13 @@
             </div>
         </section>
         
-        <!-- Pricing Section -->
         <?= gabecode_services_pricing_block(); ?>
         
-        <!-- Why Choose Us Section -->
-        <section class="why-choose-us">
-            <div class="container">
-                <div class="why-choose-us-content">
-                    <div class="content-text">
-                        <h2 class="section-title">¿Por qué elegir Silva Financial Inc.?</h2>
-                        <p class="section-description">Somos más que un servicio de bookkeeping. Somos tu socio financiero confiable que te ayuda a tomar decisiones informadas y hacer crecer tu negocio.</p>
-                        
-                        <ul class="features-list">
-                            <li class="feature-item">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">QuickBooks Certified ProAdvisor con años de experiencia</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">Precios transparentes sin costos ocultos</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">Servicio personalizado 1 a 1</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">Sistemas financieros seguros en la nube</div>
-                            </li>
-                            <li class="feature-item">
-                                <div class="feature-icon">✓</div>
-                                <div class="feature-text">Consulta inicial gratuita</div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="content-image">
-                        <img src="images/optimized/klems1_lg.png" 
-                             srcset="images/optimized/klems1_xs.png 200w,
-                                     images/optimized/klems1_sm.png 400w,
-                                     images/optimized/klems1_md.png 800w,
-                                     images/optimized/klems1_lg.png 1200w"
-                             sizes="(max-width: 768px) 400px, (max-width: 1200px) 800px, 1200px"
-                             alt="Equipo de Silva Financial trabajando" 
-                             loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?= gabecode_why_choose_block(); ?>
+
+        <?= gabecode_areas_we_serve_block(); ?>
         
-        <?php echo gabecode_basic_cta_block(); ?>
+        <?= gabecode_basic_cta_block(); ?>
         
 
 <?php get_footer(); ?>

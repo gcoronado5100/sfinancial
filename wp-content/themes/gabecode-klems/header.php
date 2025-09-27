@@ -20,25 +20,19 @@
             
             <!-- Navigation -->
             <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="blog.html" class="nav-link">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_class'     => 'nav-list',
+                    'container'      => false,
+                    'fallback_cb'    => false,
+                ));
+                ?>
             </nav>
             
             <!-- CTA Buttons -->
             <div class="header-cta">
-                <a href="contact.html" class="btn btn-outline btn-sm">Free Consultation</a>
+                <a href="<?= home_url('/contact/'); ?>" class="btn btn-outline btn-sm">Free Consultation</a>
                 <a href="https://calendly.com/silva-financial" class="btn btn-primary btn-sm" target="_blank">Schedule Meeting</a>
             </div>
             
@@ -52,26 +46,17 @@
         <div class="mobile-menu" aria-hidden="true">
             <nav class="mobile-nav">
                 <div class="mobile-cta">
-                    <a href="contact.html" class="btn btn-outline">Free Consultation</a>
+                    <a href="<?= home_url('/contact/'); ?>" class="btn btn-outline">Free Consultation</a>
                     <a href="https://calendly.com/silva-financial" class="btn btn-primary" target="_blank">Schedule Meeting</a>
                 </div>
-                <ul class="mobile-nav-list">
-                    <li class="mobile-nav-item">
-                        <a href="index.html" class="mobile-nav-link">Home</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                        <a href="about.html" class="mobile-nav-link">About</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                        <a href="services.html" class="mobile-nav-link">Services</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                        <a href="blog.html" class="mobile-nav-link">Resources</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                        <a href="contact.html" class="mobile-nav-link">Contact</a>
-                    </li>
-                </ul>
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary',
+                    'menu_class'     => 'mobile-nav-list',
+                    'container'      => false,
+                    'fallback_cb'    => false,
+                ));
+                ?>
             </nav>
         </div>
     </header>

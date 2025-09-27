@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Close mobile menu when clicking on a link
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-list a, .mobile-nav-link');
     mobileNavLinks.forEach(link => {
       link.addEventListener('click', function() {
         mobileMenuToggle.classList.remove('active');

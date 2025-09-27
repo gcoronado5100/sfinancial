@@ -109,6 +109,38 @@
       background-color: $primary-green-light;
     }
   }
+
+  // WordPress menu specific styles
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    .menu-item {
+      position: relative;
+      
+      a {
+        display: block;
+        padding: $spacing-2 $spacing-3;
+        color: $text-secondary;
+        font-weight: $font-weight-medium;
+        text-decoration: none;
+        border-radius: $border-radius;
+        transition: all $transition-fast;
+        
+        &:hover {
+          color: $primary-green;
+          background-color: $primary-green-light;
+        }
+      }
+      
+      &.current-menu-item a,
+      &.current_page_item a {
+        color: $primary-green;
+        background-color: $primary-green-light;
+      }
+    }
+  }
 }
 
 // Mobile menu toggle
@@ -147,14 +179,17 @@
       height: 2px;
       background-color: $text-primary;
       transition: all $transition-fast;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
     
     &::before {
-      top: -8px;
+      transform: translateY(-8px);
     }
     
     &::after {
-      top: 8px;
+      transform: translateY(8px);
     }
   }
   
@@ -162,13 +197,11 @@
     background-color: transparent;
     
     &::before {
-      transform: rotate(45deg);
-      top: 0;
+      transform: translateY(-50%) rotate(45deg);
     }
     
     &::after {
-      transform: rotate(-45deg);
-      top: 0;
+      transform: translateY(-50%) rotate(-45deg);
     }
   }
 }
@@ -201,6 +234,7 @@
     flex-direction: column;
     gap: $spacing-4;
     padding: $spacing-6;
+    margin-top: 3rem;
 
     .mobile-cta {
       display: grid;
@@ -214,24 +248,34 @@
     }
 
     .mobile-nav-list {
-      .mobile-nav-item {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      .menu-item {
         border-bottom: 1px solid $border-light;
 
         &:last-child {
           border-bottom: none;
         }
-      }
+        
+        a {
+          display: block;
+          padding: $spacing-4 0;
+          color: $text-secondary;
+          font-weight: $font-weight-medium;
+          text-decoration: none;
+          transition: color $transition-fast;
 
-      .mobile-nav-link {
-        display: block;
-        padding: $spacing-4 0;
-        color: $text-secondary;
-        font-weight: $font-weight-medium;
-        text-decoration: none;
-        transition: color $transition-fast;
-
-        &:hover {
+          &:hover {
+            color: $primary-green;
+          }
+        }
+        
+        &.current-menu-item a,
+        &.current_page_item a {
           color: $primary-green;
+          font-weight: $font-weight-semibold;
         }
       }
     }
